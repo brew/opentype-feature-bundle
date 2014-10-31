@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Competions</string>
+	<string>Completions</string>
 	<key>scope</key>
 	<string>source.AFDKO</string>
 	<key>settings</key>

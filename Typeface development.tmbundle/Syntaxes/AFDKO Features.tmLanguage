@@ -52,7 +52,7 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#depricated-keywords</string>
+			<string>#deprecated-keywords</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -152,7 +152,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#depricated-keywords</string>
+					<string>#deprecated-keywords</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -211,12 +211,12 @@
 			<key>name</key>
 			<string>constant.numeric.AFDKO</string>
 		</dict>
-		<key>depricated-keywords</key>
+		<key>deprecated-keywords</key>
 		<dict>
 			<key>match</key>
 			<string>\b(exclude|include)DFLT</string>
 			<key>name</key>
-			<string>invalid.depricated.AFDKO</string>
+			<string>invalid.deprecated.AFDKO</string>
 		</dict>
 		<key>double-quoted-string</key>
 		<dict>
@@ -255,7 +255,7 @@
 		<key>glyph-class</key>
 		<dict>
 			<key>match</key>
-			<string>@[a-zA-Z0-9_-]+</string>
+			<string>@[a-zA-Z\.0-9_-]+</string>
 			<key>name</key>
 			<string>storage.type.class.AFDKO</string>
 		</dict>
@@ -395,7 +395,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#depricated-keywords</string>
+					<string>#deprecated-keywords</string>
 				</dict>
 				<dict>
 					<key>include</key>
