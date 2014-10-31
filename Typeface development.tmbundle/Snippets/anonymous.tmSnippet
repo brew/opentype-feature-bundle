@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>anonymous ${1:xxxx} {
+	$2
+} ${1/\s.*//};
+</string>
+	<key>name</key>
+	<string>anonymous</string>
+	<key>scope</key>
+	<string>source.AFDKO</string>
+	<key>tabTrigger</key>
+	<string>anon</string>
+	<key>uuid</key>
+	<string>E6F7EBAF-F5C3-4BBA-A479-331433534BE3</string>
+</dict>
+</plist>

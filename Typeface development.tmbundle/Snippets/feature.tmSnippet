@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>feature ${1:xxxx} {
+	sub $2 by $3 ;
+} ${1/\s.*//};</string>
+	<key>name</key>
+	<string>feature</string>
+	<key>scope</key>
+	<string>source.AFDKO</string>
+	<key>tabTrigger</key>
+	<string>feature</string>
+	<key>uuid</key>
+	<string>93DB058B-E76D-4F6F-9E29-97A70E0ABE6D</string>
+</dict>
+</plist>

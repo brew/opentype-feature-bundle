@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleUUID</key>
+	<string>C9D2C587-7D88-4458-8075-A270040532E1</string>
+	<key>name</key>
+	<string>Typing Pairs: Substitute</string>
+	<key>scope</key>
+	<string>meta.control.substitute</string>
+	<key>settings</key>
+	<dict>
+		<key>smartTypingPairs</key>
+		<array>
+			<array>
+				<string>&lt;</string>
+				<string>&gt;</string>
+			</array>
+			<array>
+				<string>(</string>
+				<string>)</string>
+			</array>
+			<array>
+				<string>{</string>
+				<string>}</string>
+			</array>
+			<array>
+				<string>[</string>
+				<string>]</string>
+			</array>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>745DCA51-D308-47C8-82B5-88B197063AB6</string>
+</dict>
+</plist>

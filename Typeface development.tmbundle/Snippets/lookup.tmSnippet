@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>lookup ${1:xxxx} {
+	$2
+} ${1/\s.*//};</string>
+	<key>name</key>
+	<string>lookup</string>
+	<key>scope</key>
+	<string>source.AFDKO</string>
+	<key>tabTrigger</key>
+	<string>lookup</string>
+	<key>uuid</key>
+	<string>EAC99BE0-C406-4E02-A3C8-10C95C149E43</string>
+</dict>
+</plist>
