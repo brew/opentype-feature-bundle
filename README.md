@@ -6,7 +6,7 @@ This covers Adobe’s [OpenType Feature File Specification](http://partners.adob
 
 ### Sublime Text (with Package Control)
 
-1. Package Control: Install Package `opentype-feature-bundle`
+1. Package Control: Install Package `OpenType Feature Bundle`
 2. Restart Sublime Text
 
 ### Textmate (using git)
