@@ -1,4 +1,4 @@
-# OpenType Feature Bundle for Textmate/Sublime Text
+# OpenType Feature Bundle
 
 This covers Adobe’s [OpenType Feature File Specification](http://partners.adobe.com/public/developer/opentype/afdko/topic_feature_file_syntax.html) used by the AFDKO. As well as syntax highlighting, there are also a couple of snippets for creating features, tables etc.
 
@@ -8,6 +8,10 @@ This covers Adobe’s [OpenType Feature File Specification](http://partners.adob
 
 1. Package Control: Install Package `OpenType Feature Bundle`
 2. Restart Sublime Text
+
+## Atom
+
+1. Atom Package Manager: Install Package `OpenType Feature Bundle`
 
 ### Textmate (using git)
 

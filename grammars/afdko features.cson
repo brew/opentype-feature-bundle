@@ -1,0 +1,296 @@
+'fileTypes': [
+  'fea'
+]
+'foldingStartMarker': '/\\*\\*|\\{\\s*(#.*)?$'
+'foldingStopMarker': '\\*\\*/|^\\s*\\}'
+'name': 'AFDKO Features'
+'patterns': [
+  {
+    'include': '#comment-line'
+  }
+  {
+    'include': '#constant-number'
+  }
+  {
+    'include': '#glyph-class'
+  }
+  {
+    'include': '#unicode-constant'
+  }
+  {
+    'include': '#afii-constant'
+  }
+  {
+    'include': '#substitute'
+  }
+  {
+    'include': '#position'
+  }
+  {
+    'include': '#keyword'
+  }
+  {
+    'include': '#property-names'
+  }
+  {
+    'include': '#deprecated-keywords'
+  }
+  {
+    'include': '#language-constants'
+  }
+  {
+    'include': '#single-quoted-string'
+  }
+  {
+    'include': '#double-quoted-string'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'support.type.function.AFDKO'
+      '3':
+        'name': 'entity.name.function.AFDKO'
+    'match': '\\b(anon(ymous)?|feature|table|lookup)\\s+([a-zA-Z0-9_]\\w*)\\s*'
+    'name': 'meta.function.AFDKO'
+  }
+  {
+    'begin': '\\{'
+    'captures':
+      '0':
+        'name': 'punctuation.section.AFDKO'
+    'end': '\\}\\s*([a-zA-Z0-9_]\\w*)\\s*'
+    'endCaptures':
+      '1':
+        'name': 'entity.name.function.AFDKO'
+    'name': 'meta.property-list.AFDKO'
+    'patterns': [
+      {
+        'include': '#property-list-content'
+      }
+      {
+        'include': '#comment-line'
+      }
+      {
+        'include': '#substitute'
+      }
+      {
+        'include': '#position'
+      }
+      {
+        'include': '#keyword'
+      }
+      {
+        'include': '#lookupfeature'
+      }
+      {
+        'include': '#glyph-class'
+      }
+      {
+        'include': '#unicode-constant'
+      }
+      {
+        'include': '#afii-constant'
+      }
+      {
+        'include': '#property-names'
+      }
+      {
+        'include': '#deprecated-keywords'
+      }
+      {
+        'include': '#constant-number'
+      }
+      {
+        'include': '#language-constants'
+      }
+      {
+        'include': '#single-quoted-string'
+      }
+      {
+        'include': '#double-quoted-string'
+      }
+    ]
+  }
+]
+'repository':
+  'afii-constant':
+    'captures':
+      '1':
+        'name': 'punctuation.definition.constant.AFDKO'
+    'match': '\\b(afii)([0-9]{1,10})\\b'
+    'name': 'constant.other.glyphname-value.afii.AFDKO'
+  'by-from':
+    'match': '\\b(by|from)\\b'
+    'name': 'keyword.control.flow.AFDKO'
+  'comment-line':
+    'match': '(#).*$\\n?'
+    'name': 'comment.line.number-sign.AFDK0'
+  'constant-number':
+    'match': '(-|\\+)?\\s*[0-9]+(\\.[0-9]+)?'
+    'name': 'constant.numeric.AFDKO'
+  'deprecated-keywords':
+    'match': '\\b(exclude|include)DFLT'
+    'name': 'invalid.deprecated.AFDKO'
+  'double-quoted-string':
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.AFDKO'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.AFDKO'
+    'name': 'string.quoted.double.AFDKO'
+    'patterns': [
+      {
+        'match': '\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)'
+        'name': 'constant.character.escape.AFDKO'
+      }
+    ]
+  'glyph-class':
+    'match': '@[a-zA-Z\\.0-9_-]+'
+    'name': 'storage.type.class.AFDKO'
+  'keyword':
+    'match': '\\b(enum(erate)?|ignore|include|language(system)?|script|subtable|required|(exclude|include)_dflt|lookupflag|anchor|caret|cursive|device|Ignore(BaseGlyphs|Ligatures|Marks)|mark|RightToLeft)\\b'
+    'name': 'keyword.control.AFDKO'
+  'language-constants':
+    'match': '\\b(DFLT|dflt|NULL)\\b'
+    'name': 'support.constant.language.AFKDO'
+  'lookupfeature':
+    'captures':
+      '1':
+        'name': 'support.type.function.AFDKO'
+      '2':
+        'name': 'entity.name.function.AFDKO'
+    'match': '(lookup|feature)\\s+([a-zA-Z0-9_]\\w*)\\s*'
+    'name': 'meta.function.AFDKO'
+  'position':
+    'begin': '\\b(pos(ition)?)\\b'
+    'beginCaptures':
+      '1':
+        'name': 'entity.name.function.AFDKO'
+    'end': ';'
+    'name': 'meta.control.position.AFDKO'
+    'patterns': [
+      {
+        'include': '#glyph-class'
+      }
+      {
+        'include': '#constant-number'
+      }
+      {
+        'include': '#unicode-constant'
+      }
+      {
+        'include': '#afii-constant'
+      }
+    ]
+  'property-list-content':
+    'begin': '\\{'
+    'captures':
+      '0':
+        'name': 'punctuation.section.AFDKO'
+    'end': '\\}\\s*([a-zA-Z0-9_]\\w*)\\s*'
+    'endCaptures':
+      '1':
+        'name': 'entity.name.function.AFDKO'
+    'patterns': [
+      {
+        'include': '#property-list-content'
+      }
+      {
+        'include': '#comment-line'
+      }
+      {
+        'include': '#substitute'
+      }
+      {
+        'include': '#position'
+      }
+      {
+        'include': '#keyword'
+      }
+      {
+        'include': '#lookupfeature'
+      }
+      {
+        'include': '#glyph-class'
+      }
+      {
+        'include': '#unicode-constant'
+      }
+      {
+        'include': '#afii-constant'
+      }
+      {
+        'include': '#property-names'
+      }
+      {
+        'include': '#deprecated-keywords'
+      }
+      {
+        'include': '#constant-number'
+      }
+      {
+        'include': '#language-constants'
+      }
+      {
+        'include': '#single-quoted-string'
+      }
+      {
+        'include': '#double-quoted-string'
+      }
+    ]
+  'property-names':
+    'match': '\\b(FSType|nameid|parameters|(HorizAxis|VertAxis)\\.(Base(Tag|Script)List|MinMax)|GlyphClassDef|Attach|LigatureCaret|FontRevision|CaretOffset|Ascender|Descender|LineGap|Panose|Typo(Ascender|Descender|LineGap)|win(Ascent|Descent)|UnicodeRange|CodePageRange|XHeight|CapHeight|Vendor|sizemenuname|VertTypo(Ascender|Descender|LineGap|Origin(Advance)?Y))\\b'
+    'name': 'support.type.property-name.AFDKO'
+  'single-quoted-string':
+    'begin': '\''
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.AFDKO'
+    'contentName': 'string.quoted.single.AFDKO'
+    'end': '\''
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.AFDKO'
+    'name': 'string.quoted.single.AFDKO'
+    'patterns': [
+      {
+        'match': '\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)'
+        'name': 'constant.character.escape.AFDKO'
+      }
+    ]
+  'substitute':
+    'begin': '\\b(sub(stitute)?)\\b'
+    'beginCaptures':
+      '1':
+        'name': 'entity.name.function.AFDKO'
+    'end': ';'
+    'name': 'meta.control.substitute.AFDKO'
+    'patterns': [
+      {
+        'include': '#by-from'
+      }
+      {
+        'include': '#glyph-class'
+      }
+      {
+        'include': '#unicode-constant'
+      }
+      {
+        'include': '#constant-number'
+      }
+      {
+        'include': '#afii-constant'
+      }
+    ]
+  'unicode-constant':
+    'captures':
+      '2':
+        'name': 'punctuation.definition.constant.AFDKO'
+      '4':
+        'name': 'punctuation.definition.constant.AFDKO'
+    'match': '\\b((uni)[0-9a-fA-F]{4}+|(u)([0-9a-fA-F]{5}+|[0-9a-fA-F]{6}+))\\b'
+    'name': 'constant.other.glyphname-value.unicode.AFDKO'
+'scopeName': 'source.AFDKO'
