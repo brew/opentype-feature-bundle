@@ -1,0 +1,19 @@
+'.source.AFDKO':
+  'anonymous':
+    'prefix': 'anon'
+    'body': 'anonymous ${1:xxxx} {\n\t$2\n} ${1/\\s.*//};\n'
+  'class':
+    'prefix': '@'
+    'body': '@${1:ClassName} = [${2:Contents}];$0'
+  'feature':
+    'prefix': 'feature'
+    'body': 'feature ${1:xxxx} {\n\tsub $2 by $3 ;\n} ${1/\\s.*//};'
+  'lookup':
+    'prefix': 'lookup'
+    'body': 'lookup ${1:xxxx} {\n\t$2\n} ${1/\\s.*//};'
+  'substitute':
+    'prefix': 'sub'
+    'body': 'sub ${1:Something} by ${2:SomethingElse};$0'
+  'table':
+    'prefix': 'table'
+    'body': 'table ${1:xxxx} {\n\t$2\n} ${1/\\s.*//};'
