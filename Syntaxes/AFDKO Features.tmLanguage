@@ -207,7 +207,7 @@
 		<key>constant-number</key>
 		<dict>
 			<key>match</key>
-			<string>(-|\+)?\s*[0-9]+(\.[0-9]+)?</string>
+			<string>\b(-|\+)?\s*[0-9]+(\.[0-9]+)?</string>
 			<key>name</key>
 			<string>constant.numeric.AFDKO</string>
 		</dict>
