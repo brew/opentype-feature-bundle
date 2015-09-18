@@ -202,7 +202,7 @@
 			<key>match</key>
 			<string>(#).*$\n?</string>
 			<key>name</key>
-			<string>comment.line.number-sign.AFDK0</string>
+			<string>comment.line.number-sign.AFDKO</string>
 		</dict>
 		<key>constant-number</key>
 		<dict>
