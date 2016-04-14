@@ -262,7 +262,7 @@
 		<key>keyword</key>
 		<dict>
 			<key>match</key>
-			<string>\b(enum(erate)?|ignore|include|language(system)?|script|subtable|required|(exclude|include)_dflt|lookupflag|anchor|caret|cursive|device|Ignore(BaseGlyphs|Ligatures|Marks)|UseMarkFilteringSet|mark|RightToLeft)\b</string>
+			<string>\b(enum(erate)?|ignore|include|language(system)?|script|subtable|required|(exclude|include)_dflt|lookupflag|anchor|caret|cursive|device|Ignore(BaseGlyphs|Ligatures|Marks)|UseMarkFilteringSet|MarkAttachmentType|mark|RightToLeft)\b</string>
 			<key>name</key>
 			<string>keyword.control.AFDKO</string>
 		</dict>
