@@ -13,6 +13,7 @@
 			<string>IgnoreBaseGlyphs</string>
 			<string>IgnoreLigatures</string>
 			<string>IgnoreMarks</string>
+			<string>UseMarkFilteringSet</string>
 			<string>NULL</string>
 			<string>RightToLeft</string>
 			<string>aalt</string>
