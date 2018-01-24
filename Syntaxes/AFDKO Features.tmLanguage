@@ -24,6 +24,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#constant-hexadecimal</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#glyph-class</string>
 		</dict>
 		<dict>
@@ -160,6 +164,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#constant-hexadecimal</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#language-constants</string>
 				</dict>
 				<dict>
@@ -207,9 +215,16 @@
 		<key>constant-number</key>
 		<dict>
 			<key>match</key>
-			<string>\b(-|\+)?\s*[0-9]+(\.[0-9]+)?</string>
+			<string>\b(-|\+)?\s*[0-9]+(\.[0-9]+)?\b</string>
 			<key>name</key>
-			<string>constant.numeric.AFDKO</string>
+			<string>constant.numeric.decimal.AFDKO</string>
+		</dict>
+		<key>constant-hexadecimal</key>
+		<dict>
+			<key>match</key>
+			<string>\b0x[0-9A-Fa-f]+\b</string>
+			<key>name</key>
+			<string>constant.numeric.hexadecimal.AFDKO</string>
 		</dict>
 		<key>deprecated-keywords</key>
 		<dict>
@@ -416,6 +431,10 @@
 				<dict>
 					<key>include</key>
 					<string>#constant-number</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#constant-hexadecimal</string>
 				</dict>
 				<dict>
 					<key>include</key>
