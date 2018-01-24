@@ -327,6 +327,22 @@
 					<key>include</key>
 					<string>#afii-constant</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#keyword</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#language-constants</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#comment-line</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#property-names</string>
+				</dict>
 			</array>
 		</dict>
 		<key>property-list-content</key>
