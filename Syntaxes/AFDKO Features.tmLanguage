@@ -434,7 +434,7 @@
 		<key>property-names</key>
 		<dict>
 			<key>match</key>
-			<string>\b(FSType|name(id)?|parameters|(HorizAxis|VertAxis)\.(Base(Tag|Script)List|MinMax)|GlyphClassDef|Attach|LigatureCaret(ByPos|ByIndex)?|FontRevision|CaretOffset|Panose|win(Ascent|Descent)|(Unicode|CodePage)Range|(X|Cap)Height|Vendor|(Weight|Width)Class|sizemenuname|(Vert)?(Typo)?(Ascender|Descender|LineGap|Origin(Advance)?Y)|markClass|anchorDef|ligComponent|featureNames|cvParameters|(FeatUILabel|FeatUITooltipText|SampleText|ParamUILabel|ParamUILabel)NameID|Character)\b</string>
+			<string>\b(FSType|name(id)?|parameters|(HorizAxis|VertAxis)\.(Base(Tag|Script)List|MinMax)|GlyphClassDef|Attach|LigatureCaret(ByPos|ByIndex)?|FontRevision|CaretOffset|Panose|win(Ascent|Descent)|(Unicode|CodePage)Range|(X|Cap)Height|Vendor|(Weight|Width)Class|sizemenuname|(Vert)?(Typo)?(Ascender|Descender|LineGap|Origin(Advance)?Y)|ligComponent|featureNames|cvParameters|(FeatUILabel|FeatUITooltipText|SampleText|ParamUILabel|ParamUILabel)NameID|Character)\b</string>
 			<key>name</key>
 			<string>support.type.property-name.AFDKO</string>
 		</dict>
