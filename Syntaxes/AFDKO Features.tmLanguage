@@ -461,7 +461,7 @@
 		<key>substitute</key>
 		<dict>
 			<key>begin</key>
-			<string>\b(sub(stitute)?)\b</string>
+			<string>\b((r)?(everse)?sub(stitute)?)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
