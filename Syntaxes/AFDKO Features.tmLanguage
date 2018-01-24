@@ -81,7 +81,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(anon(ymous)?|feature|table|lookup)\s+([a-zA-Z0-9_]\w*)\s*</string>
+			<string>\b(anon(ymous)?|feature|table|lookup)\s+([a-zA-Z0-9_/]+)\s*</string>
 			<key>name</key>
 			<string>meta.function.AFDKO</string>
 		</dict>
@@ -97,7 +97,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>\}\s*([a-zA-Z0-9_]\w*)\s*</string>
+			<string>\}\s*([a-zA-Z0-9_/]+)\s*</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
