@@ -358,6 +358,10 @@
 					<key>include</key>
 					<string>#property-names</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#lookupfeature</string>
+				</dict>
 			</array>
 		</dict>
 		<key>property-list-content</key>
@@ -530,6 +534,10 @@
 				<dict>
 					<key>include</key>
 					<string>#afii-constant</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#lookupfeature</string>
 				</dict>
 			</array>
 		</dict>
