@@ -69,10 +69,6 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#single-quoted-string</string>
-		</dict>
-		<dict>
-			<key>include</key>
 			<string>#double-quoted-string</string>
 		</dict>
 		<dict>
@@ -178,10 +174,6 @@
 				<dict>
 					<key>include</key>
 					<string>#language-constants</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#single-quoted-string</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -459,10 +451,6 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#single-quoted-string</string>
-				</dict>
-				<dict>
-					<key>include</key>
 					<string>#double-quoted-string</string>
 				</dict>
 			</array>
@@ -473,42 +461,6 @@
 			<string>\b(FSType|name(id)?|parameters|(HorizAxis|VertAxis)\.(Base(Tag|Script)List|MinMax)|GlyphClassDef|Attach|LigatureCaret(ByPos|ByIndex)?|FontRevision|CaretOffset|Panose|win(Ascent|Descent)|(Unicode|CodePage)Range|(X|Cap)Height|Vendor|(Weight|Width)Class|sizemenuname|(Vert)?(Typo)?(Ascender|Descender|LineGap|Origin(Advance)?Y)|ligComponent|featureNames|cvParameters|(FeatUILabel|FeatUITooltipText|SampleText|ParamUILabel|ParamUILabel)NameID|Character|Ignore(BaseGlyphs|Ligatures|Marks)|UseMarkFilteringSet|MarkAttachmentType|RightToLeft|useExtension)\b</string>
 			<key>name</key>
 			<string>support.type.property-name.AFDKO</string>
-		</dict>
-		<key>single-quoted-string</key>
-		<dict>
-			<key>begin</key>
-			<string>'</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.AFDKO</string>
-				</dict>
-			</dict>
-			<key>contentName</key>
-			<string>string.quoted.single.AFDKO</string>
-			<key>end</key>
-			<string>'</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.AFDKO</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>string.quoted.single.AFDKO</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>\\[0-9a-fA-F]{2,6}</string>
-					<key>name</key>
-					<string>constant.character.escape.AFDKO</string>
-				</dict>
-			</array>
 		</dict>
 		<key>substitute</key>
 		<dict>
