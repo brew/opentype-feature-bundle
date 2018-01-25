@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>fea</string>
+		<string>feax</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>/\*\*|\{\s*(#.*)?$</string>
@@ -556,7 +557,7 @@
 		<key>mark-anchor</key>
 		<dict>
 			<key>begin</key>
-			<string>\b(markClass|anchorDef)\b</string>
+			<string>\b((mark|base)Class|anchorDef)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
