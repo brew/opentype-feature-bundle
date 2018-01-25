@@ -223,7 +223,7 @@
 		<key>constant-hexadecimal</key>
 		<dict>
 			<key>match</key>
-			<string>\b0x[0-9A-Fa-f]+\b</string>
+			<string>\b(?i:(0x\h{,6}))\b</string>
 			<key>name</key>
 			<string>constant.numeric.hexadecimal.AFDKO</string>
 		</dict>
@@ -262,7 +262,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\\[0-9a-fA-F]{2,6}</string>
+					<string>(?i:(\\\h{,6}))</string>
 					<key>name</key>
 					<string>constant.character.escape.AFDKO</string>
 				</dict>
