@@ -40,6 +40,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#mark-anchor</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#substitute</string>
 		</dict>
 		<dict>
@@ -121,6 +125,10 @@
 				<dict>
 					<key>include</key>
 					<string>#comment-line</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#mark-anchor</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -398,6 +406,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#mark-anchor</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#substitute</string>
 				</dict>
 				<dict>
@@ -538,6 +550,42 @@
 				<dict>
 					<key>include</key>
 					<string>#lookupfeature</string>
+				</dict>
+			</array>
+		</dict>
+		<key>mark-anchor</key>
+		<dict>
+			<key>begin</key>
+			<string>\b(markClass|anchorDef)\b</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.AFDKO</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>;</string>
+			<key>name</key>
+			<string>meta.control.mark-anchor.AFDKO</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#glyph-class</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#constant-number</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#afii-constant</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#keyword</string>
 				</dict>
 			</array>
 		</dict>
