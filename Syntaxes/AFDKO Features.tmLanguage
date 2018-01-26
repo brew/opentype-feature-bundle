@@ -21,6 +21,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#include-statement</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#comment-line</string>
 		</dict>
 		<dict>
@@ -122,6 +126,10 @@
 				<dict>
 					<key>include</key>
 					<string>#special-characters</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#include-statement</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -293,7 +301,7 @@
 		<key>keyword</key>
 		<dict>
 			<key>match</key>
-			<string>\b(enum(erate)?|ignore|include|language(system)?|script|subtable|required|(exclude|include)_dflt|lookupflag|anchor|contourpoint|caret|cursive|device|base|mark|ligature)\b</string>
+			<string>\b(enum(erate)?|ignore|language(system)?|script|subtable|required|(exclude|include)_dflt|lookupflag|anchor|contourpoint|caret|cursive|device|base|mark|ligature)\b</string>
 			<key>name</key>
 			<string>keyword.control.AFDKO</string>
 		</dict>
@@ -411,6 +419,10 @@
 				<dict>
 					<key>include</key>
 					<string>#special-characters</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#include-statement</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -532,6 +544,21 @@
 					<string>#lookupfeature</string>
 				</dict>
 			</array>
+		</dict>
+		<key>include-statement</key>
+		<dict>
+			<key>begin</key>
+			<string>\b(include\s*\()</string>
+			<key>end</key>
+			<string>(\))\s*;</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.AFDKO</string>
+				</dict>
+			</dict>
 		</dict>
 		<key>mark-anchor</key>
 		<dict>
