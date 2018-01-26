@@ -17,6 +17,10 @@
 	<array>
 		<dict>
 			<key>include</key>
+			<string>#special-characters</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#comment-line</string>
 		</dict>
 		<dict>
@@ -117,6 +121,10 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>#special-characters</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#property-list-content</string>
 				</dict>
 				<dict>
@@ -184,6 +192,13 @@
 	</array>
 	<key>repository</key>
 	<dict>
+		<key>special-characters</key>
+		<dict>
+			<key>match</key>
+			<string>[\'\=\[\]\(\)\-\+&lt;&gt;]</string>
+			<key>name</key>
+			<string>keyword.other.AFDKO</string>
+		</dict>
 		<key>afii-constant</key>
 		<dict>
 			<key>captures</key>
@@ -329,6 +344,10 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>#special-characters</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#glyph-class</string>
 				</dict>
 				<dict>
@@ -389,6 +408,10 @@
 			</dict>
 			<key>patterns</key>
 			<array>
+				<dict>
+					<key>include</key>
+					<string>#special-characters</string>
+				</dict>
 				<dict>
 					<key>include</key>
 					<string>#property-list-content</string>
@@ -482,6 +505,10 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>#special-characters</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#by-from</string>
 				</dict>
 				<dict>
@@ -524,6 +551,10 @@
 			<string>meta.control.mark-anchor.AFDKO</string>
 			<key>patterns</key>
 			<array>
+				<dict>
+					<key>include</key>
+					<string>#special-characters</string>
+				</dict>
 				<dict>
 					<key>include</key>
 					<string>#glyph-class</string>
