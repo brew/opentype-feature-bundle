@@ -1,6 +1,6 @@
 # OpenType Feature Bundle for TextMate/Sublime Text
 
-This covers Adobe’s [OpenType Feature File Specification](https://www.adobe.com/devnet/opentype/afdko/topic_feature_file_syntax.html) used by the [AFDKO](https://github.com/adobe-type-tools/afdko). As well as syntax highlighting, there are also a couple of snippets for creating features, tables etc.
+This covers Adobe’s [OpenType Feature File Specification](https://adobe-type-tools.github.io/afdko/OpenTypeFeatureFileSpecification.html) used by the [AFDKO](https://github.com/adobe-type-tools/afdko). As well as syntax highlighting, there are also a couple of snippets for creating features, tables etc.
 
 ## Installation
 
